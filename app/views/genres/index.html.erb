@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Genres</title>
+  </head>
+  <body>
+    <h1>Genres</h1>
+    <br/>
+    <h2>Choose an artist:</h2>
+    <ul>
+      <% Genre.all.each do |genre| %>
+      <li><a href="_site/genres/<%=genre.to_slug%>.html"><%= genre.name %></a></li>
+      <%end%>
+    </ul>
+  </body>
+</html>
+<!--
+Each model will have an index page in their appropriate folder in app/views directory
+This index lists every instance and links to that instances show page --> -->

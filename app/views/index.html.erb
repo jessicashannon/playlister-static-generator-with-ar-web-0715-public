@@ -1,1 +1,28 @@
 <!-- The main page of playlister -->
+
+<!-- The index should have a link to each model and a count of total instances
+ex. Artists - 42 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Playlister Index</title>
+  </head>
+  <body>
+    <h1>Welcome to Playlister!</h1>
+    <h3>Artists: (<%=Artist.count%>)<a href="_site/artists/index.html"></h3>
+    <h3>Songs: (<%=Song.count%>)<a href="_site/songs/index.html"></h3>
+    <h3>Genres: (<%=Genre.count%>)<a href="_site/genres/index.html"></h3>
+    <br/>
+  </body>
+</html> -->
+
+<!--
+Each model will generally have an index page. Often they list all instances of model
+
+You will need to generate an index page for the top level of app/views/
+The index should have a link to each model and a count of total instances
+ex. Artists - 42
+Your index pages should be called index.html.erb
+Each model will have an index page in their appropriate folder in app/views directory
+This index lists every instance and links to that instances show page -->
